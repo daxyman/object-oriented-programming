@@ -7,13 +7,19 @@ public class exo11 {
             tab1[i] = (int)(Math.random()*101);
         }
         printTable(tab1);
+        System.out.print("Table inversed: ");
+        printTable(inverseTable(tab1));
+        
     }
     public static int[] inverseTable(int[] tabl){
-        int[] ex1 = new int[9];
-        for(int i = 0; i<tabl.length; i++){
-
+        for(int i=0; i<tabl.length; i++){
+            if(i<tabl.length/2){
+                int x = tabl[(tabl.length)-(i+1)];  // x = temp  a = tabl[(tabl.length)-(i+1)]  b = tabl[i]
+                tabl[(tabl.length)-(i+1)] = tabl[i];
+                tabl[i] = x;
+            }
         }
-        return ex1;
+        return tabl;
     }
 
     public static void printTable(int[] tabl){
@@ -26,6 +32,6 @@ public class exo11 {
             System.out.print(',');
         } 
         System.out.println(']');
-        System.out.print(tabl.length);
+        System.out.println("table length: " + tabl.length);
     }
 }
