@@ -1,4 +1,4 @@
-public class exo13 {
+public class exo13Todo {
     public static void main(String[] args){
         int[] table = new int[20];
         table = fillTable(table);
