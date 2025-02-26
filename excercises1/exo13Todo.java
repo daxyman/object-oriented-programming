@@ -1,6 +1,8 @@
-public class exo13Todo {
+
+
+public class exo13 {
     public static void main(String[] args){
-        int[] table = new int[20];
+        int[] table = new int[5];
         table = fillTable(table);
         printTable(table);
         printTable(tableNoDupes(table));
@@ -8,7 +10,6 @@ public class exo13Todo {
     }
 
     public static int[] tableNoDupes(int[] table){
-        int[] tab2 = new int[table.length];
         int tabNewLength = 0;
         for(int i=0; i<table.length; i++){
             System.out.println("\nnumber "+(i+1)+ " ");
@@ -16,10 +17,23 @@ public class exo13Todo {
                 if(table[j]==table[i]){
                 System.out.println("found dupe "+ (tabNewLength+1) + " : " + table[i]);
                 tabNewLength += 1;
+                break;
                 }
             }
         }
         System.out.println("the amount of dupes found is: " + tabNewLength);
+
+        int[] tab2 = new int[table.length-tabNewLength];
+        for(int i=0; i<table.length; i++){
+            System.out.println("\nnumber "+(i+1)+ " ");
+            for(int j=i+1; j<table.length; j++){
+                if(table[j]==table[i]){
+                break;
+                }else{
+                    tab2[j] = table[i];
+                }
+            }
+        }
         return tab2;
     }
     public static void printTable(int[] table){
@@ -29,14 +43,14 @@ public class exo13Todo {
             if(i == table.length-1){
                 break;
             }
-            System.out.print(',');
+            System.out.print(", ");
         }
         System.out.println(']');
     }
 
     public static int[] fillTable(int[] table){
         for (int i=0; i<table.length; i++) {
-            table[i] = (int)(Math.random()*101);
+            table[i] = (int)(Math.random()*5);
         }
         return table;
     }
