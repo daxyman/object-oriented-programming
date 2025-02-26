@@ -2,9 +2,16 @@ public class exo15 {
     public static void main(String args[]){
         int[] tabl = new int[10];
         printTable(filltabl(tabl));
+        System.out.println("\nIl y a " + showEvenNumbers(tabl) + " nombres pairs dans ce tableau");
     }
-    public static void calcAverage(){
-        
+    public static int showEvenNumbers(int[] tabl){
+        int evenCount = 0;
+        for(int i=0; i<tabl.length; i++){
+            if(tabl[i]%2 == 0){
+                evenCount += 1;
+            }
+        }
+        return evenCount;
     }
     public static int [] filltabl(int[] table){
         for(int i = 0; i<table.length; i++){

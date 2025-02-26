@@ -1,4 +1,4 @@
-public class exo14 {
+public class exo14ToDo {
     public static void main(String[] args){
         int[] tab1 = new int[3];
         int[] tab2 = new int[3];
