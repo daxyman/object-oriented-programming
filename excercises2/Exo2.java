@@ -20,17 +20,21 @@ class Examen{
     public char convertNote(){
         char lettre = 'N';
         
-        if(this.note <=100 && this.note>90){
+        if (this.note < 0 || this.note > 100) {
+            System.out.println("Note must be between 0 and 100.");
+          }
+          
+          if (this.note > 90) {
             lettre = 'A';
-        }else if(this.note <=90 && this.note>80){
+          } else if (this.note > 80) {
             lettre = 'B';
-        }else if(this.note <=80 && this.note>70){
+          } else if (this.note > 70) {
             lettre = 'C';
-        }else if(this.note <=70 && this.note>60){
+          } else if (this.note > 60) {
             lettre = 'D';
-        }else if(this.note <= 60 && this.note>=0){
+          } else {
             lettre = 'E';
-        }
+          }
         return lettre;
     }
 }
