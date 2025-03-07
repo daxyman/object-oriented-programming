@@ -1,5 +1,5 @@
 
-public class exo4 {
+public class exo04 {
     public static void main(String args[]){
         System.out.println(50+34);
         System.out.println(50-34);

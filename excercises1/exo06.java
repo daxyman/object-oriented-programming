@@ -1,4 +1,4 @@
-public class exo6 {
+public class exo06 {
     public static void main(String args[]){
         boolean bool1 = 44==66;
         boolean bool2 = 44!=66;

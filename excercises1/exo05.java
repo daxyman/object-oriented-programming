@@ -1,4 +1,4 @@
-public class exo5 {
+public class exo05 {
     public static void main(String args[]){
         int demo = 0;
         demo = 8;

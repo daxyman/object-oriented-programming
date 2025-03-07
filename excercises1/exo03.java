@@ -1,4 +1,4 @@
-public class exo3 {
+public class exo03 {
     public static void main(String args[]){
         String name1 = new String();
         boolean name2 = true;
