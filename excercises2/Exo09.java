@@ -1,4 +1,4 @@
-public class Exo9 {
+public class Exo09 {
     public static void main(String[] args){
         Etudiant etudiant1 = new Etudiant(2289348, "Daniel Felipe");
         etudiant1.evaluations[0].noteSur100 = 50;

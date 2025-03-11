@@ -1,5 +1,5 @@
 
-public class Exo2 {
+public class Exo02 {
     public static void main(String[] args){
         Examen examen1 = new Examen("maxime",(byte) 34);
         examen1.afficherResultat();

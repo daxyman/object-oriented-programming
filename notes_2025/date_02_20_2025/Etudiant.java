@@ -1,4 +1,4 @@
-package notes_2025.date_20_02_2025;
+package notes_2025.date_02_20_2025;
 
 public class Etudiant {
     public static void main(String[] args) {

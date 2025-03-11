@@ -1,5 +1,5 @@
 
-public class Exo8 {
+public class Exo08 {
     public static void main(String[] args){
         Evaluation eval1 = new Evaluation("Mathématiques", 0.4f);
         eval1.noteSur100 = 85;

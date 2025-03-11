@@ -1,4 +1,4 @@
-public class Exo4 {
+public class Exo04 {
     public static void main(String[] args){
         int[] tab = new int[12];
         Livre mR = new Livre("Maze Runner", "James Dashner", 100, true);
