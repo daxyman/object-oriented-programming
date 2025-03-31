@@ -1,13 +1,15 @@
 public class Exo03 {
     public static void main(String[] args){
-
+        CompteBancaire daniel = new CompteBancaire("Daniel", 10);
+        System.out.println(daniel.solde);
+        System.out.println(daniel.titulaire);
     }
 }
 class CompteBancaire{
     String titulaire;
     double solde;
 
-    public CompteBancaire(){
+    public CompteBancaire(String titulaire, double solde){
         this.titulaire = titulaire;
         this.solde = solde;
     }
