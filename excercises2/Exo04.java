@@ -1,8 +1,10 @@
 public class Exo04 {
     public static void main(String[] args){
-        int[] tab = new int[12];
+        Livre[] tab = new Livre[12];
         Livre mR = new Livre("Maze Runner", "James Dashner", 100, true);
         mR.afficherDetails();
+        tab[0] = mR;
+        System.out.println(tab[0]);
     }
 }
 class Livre{
