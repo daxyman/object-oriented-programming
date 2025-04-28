@@ -2,7 +2,7 @@ package notes_25.src.main.java.excercises3;
 
 import org.jcp.xml.dsig.internal.dom.Utils;
 
-public class Exo8 {
+public class Exo38 {
 
     public static void main(String[] args) {
         // Array to store 30 articles

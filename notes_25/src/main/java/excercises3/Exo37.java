@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-public class Exo7 {
+public class Exo37 {
     public class Exo7 {
     static final int NUM_FOOD = 100;
     static final int NUM_PLAYER = 4;
